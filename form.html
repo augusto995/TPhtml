@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgb(151, 197, 244);
+            border-radius: 10px;
+            padding: 40px;
+        }
+        div{
+            margin-bottom: 15px;
+        }
+        label{
+            display: block;
+            font-weight: bold;
+        }
+        button{
+            background-color: #6fbcab;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        nav ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            margin-right: 20px;
+        }
+    </style>
 </head>
+
 <body>
+    <nav>
+        <ul>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://www.google.com/">Google</a></li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+            <li><a href="form.html">Formulario</a></li>
+
+        </ul>
+    </nav>
     <form>
-        <label>Nombre</label>
-        <input type="text" placeholder="Introduce tu Nombre">
-        <label>Apellido</label>
-        <input type="text" placeholder="Introduce tu Apellido">
-        <label>Edad</label>
-        <input type="number" placeholder="Introduce tu Edad">
-        <label>Email</label>
-        <input type="email" placeholder="Introduce tu email">
+        <div><label>Nombre</label>
+            <input type="text" placeholder="Introduce tu Nombre">
+        </div>
+
+        <div>
+            <label>Apellido</label>
+            <input type="text" placeholder="Introduce tu Apellido">
+        </div>
+
+        <div>
+            <label>Edad</label>
+            <input type="number" placeholder="Introduce tu Edad">
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" placeholder="Introduce tu email">
+        </div>
+
+        <div>
+            <textarea placeholder="Ingrese su mensaje"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+
     </form>
+    <footer><div><a href="index.html">Volver al inicio</a></div></footer>
 </body>
+
 </html>
